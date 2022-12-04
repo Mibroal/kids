@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Airfool"; 
+    src: url("../fonts/Airfool.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+    @font-face {
+        font-family: "Kosko"; 
+        src: url("../fonts/Kosko.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+        } 
+h1, h2, h3, h5s {
+    font-family: Airfool, sans-serif;
+    text-align: center;
+    color: #007BFF;
+}
+p {
+    font-family: Kosko, sans-serif;
+    
+}
+/*Header*/
+.navbar-brand{
+    font-family: Airfool, sans-serif;
+}
+.nav-item a{
+    font-family: Kosko, sans-serif;
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+}
+/*Banner*/
+.banner{
+    background-image: url(/assets/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 25%;
+    background-color: #f4f4f4;
+}
+.banner_text{
+    padding-left: 15%;
+    width: 50%;
+}
+.bunner_title{
+    padding: 50px 0;
+}
+.banner_button{
+    margin-left: 35%;
+    padding: 10px 30px !important;
+    border-color: #ff4500 !important;
+    color: #ff4500 !important;
+    margin-bottom: 30px;
+}
+.banner_button:hover{
+    background-color: #ff4500 !important;
+    color: #fff !important;
+}
+@media screen and (max-width:460px) {
+    .banner{
+        background-image: none;
+    }
+    .banner_text{
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+/*Advantages*/
+.advantages_title, .products_title, .rew_title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.advantages_card {
+    align-items: center;
+    border: 0px !important;
+}
+.advantages_img{
+    width: 40% !important;
+}
+/*Products*/
+.card-body-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.products_button{
+    padding: 10px 30px !important;
+    border-color: #ff4500 !important;
+    color: #ff4500 !important;
+}
+.products_button:hover{
+    background-color: #ff4500 !important;
+    color: #fff !important;
+}
+/*faq*/
+.faq-header{
+    font-size: 42px;
+    padding: 24px;
+  }
+  
+  .faq-content {
+    margin: 0 auto;
+  }
+  
+  .faq-question {
+    padding: 20px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+  
+  .panel-title {
+    font-size: 24px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+  }
+  
+  .panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+  }
+  
+  .plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    color: #007BFF;
+  }
+  
+  .panel:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .panel {
+    display: none;
+  }
+  .panel-content{
+    z-index:1;
+  }
+  /*footer*/
+  .footer-bg {
+    padding: 25px 0;
+    background: #007BFF;
+    color: #fff;
+    font-family: Kosko, sans-serif;
+}
+
+@media (min-width: 1200px){
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1170px;
+}
+.row-fluid {
+    width: 100%;
+}
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.row-fluid {
+    display:flex;
+  justify-content:space-between;
+}
+.custom-logo {
+    padding: 15px 15px 0 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.custom-slogan p{
+    padding: 0px 0px 0 0px;
+ font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.copyr {
+  font-size: 14px;
+  font-weight: 400;
+}
+.foot_menu {
+  display:flex;
+  flex-direction:column;
+  margin-top:15px;
+}
+.foot_menu a{
+    font-family: Kosko, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color:#fff;
+  text-decoration:underline;
+}
+.foot_menu a:hover{
+  text-decoration:none;
+  color:#fff;
+}
+.adress {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+    font-family: Kosko, sans-serif;
+    text-align: right;
+  padding-bottom:20px;
+  margin-top:15px;
+}
+.tel{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color:#fff;
+  text-decoration:none;
+  text-align:right;
+}
+.tel:hover{
+  text-decoration:underline;
+}
+.footer_logo{
+font-family: Airfool, sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size:  2rem;
+}
+.moduletable-call{
+    margin-top: 15px;
+}
+@media screen and (max-width:460px){
+    .row-fluid {
+        flex-direction: column !important;
+    }
+}
+
